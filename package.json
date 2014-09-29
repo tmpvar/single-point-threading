@@ -1,1 +1,13 @@
-{}
+{
+  "scripts" : {
+    "start": "beefy single-point-threading.js:bundle.js --live --open --index=index.html"
+  },
+  "dependencies": {
+    "qel": "^1.0.0"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.1",
+    "domready": "^1.0.7",
+    "watchify": "^1.0.6"
+  }
+}
