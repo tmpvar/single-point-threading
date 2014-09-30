@@ -1,4 +1,9 @@
-{
+function metricToTPI(v) {
+  return Math.round((v/25.4)*100) * 100;
+}
+
+
+module.exports = {
   "#0000 - fine": 160,
   "#000 - fine": 120,
   "#00 - fine": 90,
@@ -47,27 +52,27 @@
   "1-1/4 - fine": 12,
   "1-1/2 - course": 6,
   "1-1/2 - fine": 12,
-  "2mm": 0.4,
-  "2.5mm": 0.45,
-  "3mm": 0.5,
-  "4mm": 0.7,
-  "5mm": 0.8,
-  "6mm": 1,
-  "7mm": 1,
-  "8mm": 1.25,
-  "8mm - fine": 1,
-  "10mm": 1.5,
-  "10mm - fine": 1.25,
-  "10mm - super fine": 1,
-  "12mm": 1.75,
-  "12mm - fine": 1.5,
-  "12mm - super fine": 1.25,
-  "14mm": 2,
-  "14mm - fine": 1.5,
-  "14mm - JIS": 1.5,
-  "16mm": 2,
-  "16mm - JIS": 1.5,
-  "18mm": 2.5,
-  "18mm - JIS": 1.5,
-  "20mm": 2.5
+  "2mm": metricToTPI(0.4),
+  "2.5mm": metricToTPI(0.45),
+  "3mm": metricToTPI(0.5),
+  "4mm": metricToTPI(0.7),
+  "5mm": metricToTPI(0.8),
+  "6mm": metricToTPI(1.0),
+  "7mm": metricToTPI(1.0),
+  "8mm": metricToTPI(1.25),
+  "8mm - fine": metricToTPI(1.0),
+  "10mm": metricToTPI(1.5),
+  "10mm - fine": metricToTPI(1.25),
+  "10mm - super fine": metricToTPI(1),
+  "12mm": metricToTPI(1.75),
+  "12mm - fine": metricToTPI(1.5),
+  "12mm - super fine": metricToTPI(1.25),
+  "14mm": metricToTPI(2),
+  "14mm - fine": metricToTPI(1.5),
+  "14mm - JIS": metricToTPI(1.5),
+  "16mm": metricToTPI(2),
+  "16mm - JIS": metricToTPI(1.5),
+  "18mm": metricToTPI(2.5),
+  "18mm - JIS": metricToTPI(1.5),
+  "20mm": metricToTPI(2.)5
 }
